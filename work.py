@@ -1,13 +1,4 @@
-﻿print('''1- Добавить новую задачу)
-2- Удалить задачу).
-3- Показать список задач)
-4- Сортировать задачи по буквам)
-5- Добавить задачу в определенную позицию)
-6- Показать количество задач в списке)
-7- Удалить все задачи)
-8- Выход из программы)''')
-
-tasks = []
+﻿tasks = []
 while True:
     print("1- Lisa uus ülesanne")
     print("2- Eemalda ülesanne")
@@ -15,18 +6,17 @@ while True:
     print("4- Lisa ülesanne konkreetsele positsioonile")
     print("5- Kuva ülesannete arv nimekirjas")
     print("6- Kustuta kõik ülesanded")
-    print("7- Välju programmist")
-    print("8- Kontrolli stringi omadusi (digit, alpha, alnum, jne.)")
+    print("7- Kontrolli stringi omadusi (digit, alpha, alnum, jne.)")
     
     while True:
         try:
-            valik = int(input("Vali tegevus (1-9): "))
-            if 1 <= valik <= 9:
+            valik = int(input("Vali tegevus (1-7): "))
+            if 1 <= valik <= 7:
                 break
             else:
-                print("Palun vali number vahemikus 1-9.")
+                print("Palun vali number vahemikus 1-7.")
         except ValueError:
-            print("Palun vali kehtiv number vahemikus 1-9.")
+            print("Palun vali kehtiv number vahemikus 1-7.")
             print()
 
     if valik == 1:
@@ -81,11 +71,7 @@ while True:
         tasks.clear()
         print("Kõik ülesanded on nimekirjast eemaldatud.")
         print()
-
     elif valik == 7:
-        print("Head aega ja edu ülesannete täitmisel!")
-        break
-    elif valik == 8:
             print("Vali, mida kontrollida stringi omadustest:")
             print("1- Kas string on number?")
             print("2- Kas string sisaldab ainult tähti?")
