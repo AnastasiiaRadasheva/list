@@ -1,5 +1,14 @@
-﻿tatasks = []
+﻿print('''1- Добавить новую задачу)
+2- Удалить задачу).
+3- Показать список задач)
+4- Сортировать задачи по буквам)
+5- Добавить задачу в определенную позицию)
+6- Показать количество задач в списке)
+7- Удалить все задачи)
+8- Выход из программы)
+9- Проверить свойства строки''')
 
+tatasks = []
 while True:
     print("1- Lisa uus ülesanne")
     print("2- Eemalda ülesanne")
@@ -69,7 +78,7 @@ while True:
                 tasks.insert(koht - 1, soov)
                 print(f"Ülesanne '{soov}' on lisatud positsioonile {koht}.")
             else:
-                print(f"Kehtetu positsioon. Palun vali vahemikus 1-{len(tasks) + 1}.")
+                print(f"Kehtetu positsioon. Palun vali vahemikus {len(tasks) + 1}.")
         except ValueError:
             print("Positsioon peab olema arv.")
         print()
@@ -114,15 +123,15 @@ while True:
         else:
             print(f"String '{string}' sisaldab erinevaid karakterite tüüpe.")
         print()
-# # 1 
+
 # print("reavahe")
 # print("ül rea eraldamine tühikuga ")
 # s = "Python is awesome"
 # split_str = s.split()  
-# #´2
+
 # print("asendada kõik tühikud")
 # replaced_str = s.replace(" ", "-")  
-# # 3
+
 # print("reavahe")
 # s2 = "apple,banana,cherry"
 # split_comma = s2.split(",")  
@@ -134,7 +143,6 @@ while True:
 # slice_str = s[1:5]  # "ytho"
 
 # padded_str = s.zfill(10)  # "00000Python"
-
 
 # print(slice_str)  
 # print(centered_str) 
