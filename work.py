@@ -11,7 +11,7 @@ while True:
     while True:
         try:
             valik = int(input("Vali tegevus (1-7): "))
-            if 1 < valik > 7:
+            if valik < 1 or valik > 7:
                 break
             else:
                 print("Palun vali number vahemikus 1-7.")
