@@ -79,13 +79,13 @@ while True:
             print("5- Kas string on ainult suurtest tähtedest?")
             while True:
                 try:
-                    kontrolli_valik = int(input("Vali tegevus (1-11): "))
-                    if 1 <= kontrolli_valik <= 11:
+                    kontrolli_valik = int(input("Vali tegevus (1-5): "))
+                    if 1 <= kontrolli_valik <= 5:
                         break
                     else:
-                        print("Palun vali number vahemikus 1-11.")
+                        print("Palun vali number vahemikus 1-5.")
                 except ValueError:
-                    print("Palun vali kehtiv number vahemikus 1-11.")
+                    print("Palun vali kehtiv number vahemikus 1-5.")
         
             string = input("Sisesta string, mida kontrollida: ").strip()
 
