@@ -39,17 +39,16 @@ while True:
 
     elif valik == 2:
         vastus = input("Sisesta ülesanne, mille tahad eemaldada: ")
-        if vastus in tasks:
-            tasks.remove(vastus)
-            print(f"Ülesanne '{vastus}' on eemaldatud nimekirjast.")
-        else:
+        found = False
+        for task in tasks:
+            if task == vastus:
+                tasks.remove(task)
+                print(f"Ülesanne '{vastus}' on eemaldatud nimekirjast.")
+                found = True
+                break
+        if not found:
             print(f"Ülesannet '{vastus}' ei leitud nimekirjast.")
         print()
-    elif valik == 3:
-        tasks.sort()
-        print(f"Ülesanded on sorteeritud: {tasks}")
-        print()
-
     elif valik == 4:
         soov = input("Sisesta ülesanne: ")
         try:
